@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Содержимое рабочей директории</title>
+</head>
+<body>
+    <a href="{% url 'home' %}">Вернуться на главную</a>
+    <h2>Содержимое рабочей директории</h2>
+        {% for name in list_dir %}
+        <p>{{ name }}</p>
+        {% endfor %}
+    <br>
+</body>
+</html>
